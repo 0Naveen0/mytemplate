@@ -1,0 +1,407 @@
+body{
+background-color:rgb(255,255,255);
+ border:0px solid black ;
+ 
+}
+
+.error
+{
+    font:20px solid red;
+}
+
+.success{font:20px solid green;}
+/*
+div#nav a{
+
+text-decoration:none;
+
+margin-top:1px;
+
+border:solid 1px;
+color: #000;
+padding-left:2px;
+padding-bottom:1px;
+width:125px;
+height:8px;
+text-align: center;
+
+}
+div#nav a:hover{ 
+color: #ccffff;
+
+
+background:#0033cc;
+font-weight:bold;   }
+
+
+#nav
+{
+	// margin-top:5px;
+}
+*/
+#nav ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#nav ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight: 700;
+	font-size:12px;
+	line-height:32px;
+	padding:0px 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#nav ul li
+{
+	position:relative;
+	float:left;
+	margin:0px;
+	padding:0px;
+background-color:cyan;
+}
+
+#nav ul li.current-menu-item
+{
+	background:#ddd;
+}
+
+#nav ul li:hover
+{
+	background:#ff6666;
+margin-top:2px;
+}
+
+#nav ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0px;
+	background:#fff;
+	padding:0px;
+}
+
+#nav ul ul li
+{
+	float:none;
+	width:200px;
+}
+#nav ul ul li:hover
+{
+	margin-left:15px;
+margin-top:0px;
+}
+#nav ul ul a
+{
+	line-height:120%;
+	padding:10px 15px;
+}
+
+#nav ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#nav ul li:hover > ul
+{
+	display:block;
+
+}
+
+
+#wrapper{
+position:absolute;
+width:1300px;
+height:1000px;
+margin-left:5px;
+border:3px solid white;
+
+}
+header{
+position:relative;
+
+
+
+
+color: #000000;
+    font-family: Verdana;
+font-size: 49pt;
+    font-weight: bold;
+
+}
+
+
+
+#nav{
+position:relative;
+margin-top:0px;
+
+
+height:30px;
+
+
+    font-family: Verdana;
+font-size: 12pt;
+    font-weight: bold;
+
+
+}
+#time td{
+ background-color:lightgray;
+color: #0f0f0f;
+    font-family: Verdana;
+font-size: 12pt;
+    font-weight: bold;   
+    
+    
+    
+}
+
+#aside{
+
+
+position:relative;
+margin-top:5px;
+
+background-color:transparent;
+
+    font-family: Verdana;
+font-size: 12pt;
+    font-weight: bold;
+  
+padding:2px;
+float:left;
+
+
+}
+
+#main{
+
+position:relative;
+margin-top:5px;
+
+background-color:white;
+
+    font-family: Verdana;
+font-size: 12pt;
+    font-weight: bold;
+
+
+}
+
+
+
+#main message{
+
+background-color:white;
+color:  #ffff00;
+    font-family: Verdana;
+font-size: 12pt;
+    font-weight: bold;
+
+
+
+
+
+
+
+}
+
+
+
+
+#logintable{
+position:relative;margin-top:40px;;
+}
+
+#links{
+position:relative;
+margin-top:5px;
+
+background-color:transparent;
+border:solid thin lightgray;
+
+    font-family: Verdana;
+font-size: 12pt;
+    font-weight: bold;
+
+
+float:right;
+
+}
+#social{position:relative;
+       
+        text-align: center;
+       float:right;}
+
+.dropdown-submenu{
+    position:relative;
+}
+.dropdown-submenu >.dropdown-menu{
+    top:0;
+    left:100%;
+    margin-top: -1px;
+}
+.cyan{background-color:cyan;}
+
+.footer{
+
+background-color:cyan;
+text-align:center;
+
+}
+
+
+ #current{
+background-color:lightgreen;
+
+}
+
+main{
+clear:both;
+position: relative;
+}
+
+.not_attempted{background-color:yellow;}
+.attempted{background-color:green;}
+.final{background-color:red;}
+
+
+
+.pagehead{
+   font-size:30px ; 
+font-weight: bold; 
+text-align: center;
+border-bottom: 2px #ffff00;
+margin-bottom: 5px !important;
+    
+}
+
+
+#personal > th
+{
+  font-size:16px ; 
+font-weight: bold;  
+}
+
+
+.subhead
+{
+   font-size:25px ; 
+font-weight: bold; 
+text-align: center;
+height:40px;
+
+padding-top: 5px;
+padding-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
+background-color:#204d74 !important;
+color:white !important;
+
+    
+}
+
+.heading
+{
+font-size:18px ; 
+font-weight: bold;
+
+    
+}
+
+.content
+{
+  font-size:14px ; 
+font-weight:normal;  
+}
+
+.co{
+    margin-left: 5px;
+    margin-top: 5px;
+margin-bottom: 5px; }
+.photo
+{
+ 
+    width:115px ;
+    height:160px;
+    margin-top: 5px !important;
+   
+}
+
+ul
+{
+   margin-top: 5px;
+   margin-bottom: 5px;
+    list-style-image: url("/resumebuilder/images/arrow.jpg") ;
+    list-style-type: circle;
+font-weight:normal; 
+    
+}
+
+.career
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size:14px ; 
+    font-weight:normal;  
+     
+    
+}
+table tr{
+  
+}
+.noborder{border:none !important;}
+#persontbl,#addresstbl tr td{ border:none !important;}
+#personal4 tr td{ border:none !important;}
+#persontbl,#addresstbl tr th {
+    
+    border:none !important;
+  
+}
+
+@media print
+{
+  
+ /*   .photo
+{
+    position:relative ;
+    width:115px;
+    height:160px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float:none;
+}*/
+    
+body{
+    border:0px;
+}
+    @page
+{
+   size: A4 portrait;
+  
+background-color:rgb(255,255,255);
+ 
+
+   
+    
+}  
+   
+}
+
+.selected_menu{background-color:lightgreen;}
+
+
+.datepicker{width:180px; margin: 0 20px 20px 20px;}
+.datepicker > span:hover{cursor: pointer;}
+
