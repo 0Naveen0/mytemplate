@@ -6,6 +6,7 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH.'libraries/staticvariables.php');
 
 ?>
 <?php 
@@ -72,9 +73,9 @@ $amountinwords="Two Lacs Thirty One Thousand Only";
 $sparetyreno="Z1234";
 //*/
 //$invoicedate=isset(date_format($date,"d-m-Y"));
-$district="Darbhanga";$state="Bihar";
+$district=$comp_district;$state=$comp_state;
 $logourl=base_url().'assets/images/companylogo.jpg';
-$salesofficersignature=base_url().'assets/images/salesofficer1.png';
+$salesofficersignature=base_url().'assets/images/salesofficer21.png';
 
 ?>
 <div class="d-print-none">

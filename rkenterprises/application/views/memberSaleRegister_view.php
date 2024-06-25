@@ -6,6 +6,7 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH.'libraries/staticvariables.php');
 
 ?>
 <?php 
@@ -68,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                    <select class="form-control" name="companyid">
                         
                         <option value="all" selected>All</option>
-                        <option value="1001">Madhubani</option>
+                        <option value="1001"><?php echo $comp_district;?></option>
                         <!-- <option value="1002">Jhanjharpur</option> -->
                         
                     </select>

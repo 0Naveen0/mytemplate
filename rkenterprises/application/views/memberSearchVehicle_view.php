@@ -5,6 +5,7 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH.'libraries/staticvariables.php');
 
 ?>
 <?php 
@@ -147,7 +148,7 @@ if(count($vehicledata)){
                 <label for="chasisno" class="col-sm-3 control-label">Chasis No.</label>
                 <div class="col-sm-3">
 
-                    <input type="text" class="form-control" id="chasisno" name='chasisno'  maxlength="17" minlength="17" required="required" >
+                    <input type="text" class="form-control" id="chasisno" name='chasisno'  maxlength="27" minlength="17" required="required" >
                 </div>
                 <label for="engineno" class="col-sm-3 control-label">Motor no.</label>
                 <div class="col-sm-3">
@@ -303,12 +304,12 @@ if(count($vehicledata)){
                 <label for="chasisno" class="col-sm-3 control-label">Chasis No.</label>
                 <div class="col-sm-3">
 
-                    <input type="text" class="form-control"  name='chasisno'  maxlength="17" minlength="17" required="required" >
+                    <input type="text" class="form-control"  name='chasisno'  maxlength="27" minlength="17" required="required" >
                 </div>
                 <label for="engineno" class="col-sm-3 control-label">Motor no.</label>
                 <div class="col-sm-3">
 
-                    <input type="text" class="form-control"  name='engineno' maxlength="10" minlength="10"  required="required" >
+                    <input type="text" class="form-control"  name='engineno' maxlength="25" minlength="10"  required="required" >
                 </div>
             </div>
            

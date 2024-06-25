@@ -10,12 +10,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <p class='h2'>Forms</p>
 
 
-<a  href="/shankarandsons/assets/forms/MarginFormat.pdf" class='' target='blank'>Margin Format</a>
+<a  href="<?php echo base_url().'assets/forms/MarginFormat.pdf';?>" class='' target='blank'>Margin Format</a>
 <hr/>
-<a  href="/shankarandsons/assets/forms/PermitChallan1.pdf" class='' target='blank'>Permit Form( Form P.Co.P.F Rule 73)I)iii) )</a>
+<a  href="<?php echo base_url().'assets/forms/PermitChallan1.pdf';?>" class='' target='blank'>Permit Form( Form P.Co.P.F Rule 73)I)iii) )</a>
 <hr/>
 
-<a  href="/apoorvatraders/assets/forms/PDIFORMAT.pdf" class='' target='blank'>PDI Sheet BSVI</a>
+<a  href="<?php echo base_url().'assets/forms/PDIFORMAT.pdf';?>" class='' target='blank'>PDI Sheet BSVI</a>
 <hr/>
-<a  href="/shankarandsons/index.php/memberview/downloadDatabase" class='' target='blank'>Backup Database</a>
+<a  href="<?php echo base_url().'index.php/memberview/downloadDatabase';?>" class='' target='blank'>Backup Database</a>
 <hr/>

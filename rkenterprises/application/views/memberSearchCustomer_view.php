@@ -5,6 +5,7 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH.'libraries/staticvariables.php');
 
 ?>
 <?php 
@@ -160,19 +161,19 @@ if(count($customerdata)){
                 <label for="customerdistrict" class="col-sm-3 control-label">District</label>
                 <div class="col-sm-3">
 
-                    <input type="text" class="form-control" id="customerdistrict" name='customerdistrict'   required="required" value="Madhubani">
+                    <input type="text" class="form-control" id="customerdistrict" name='customerdistrict'   required="required" value="<?php echo $comp_district;?>">
                 </div>
 				<label for="customerstate" class="col-sm-3 control-label">State</label>
                 <div class="col-sm-3">
 
-                    <input type="text" class="form-control" id="customerstate" name='customerstate'   required="required" value="Bihar">
+                    <input type="text" class="form-control" id="customerstate" name='customerstate'   required="required" value="<?php echo $comp_state;?>">
                 </div>
             </div>
 			<div class="form-group form-group-sm">
                 <label for="customerpin" class="col-sm-3 control-label">PIN</label>
                 <div class="col-sm-3">
 
-                    <input type="text" class="form-control" id="customerpin" name='customerpin' maxlength=6 minlength=6  required="required" value="847228">
+                    <input type="text" class="form-control" id="customerpin" name='customerpin' maxlength=6 minlength=6  required="required" value="000000">
                 </div>
 				<label for="customercontact" class="col-sm-3 control-label">Contact</label>
                 <div class="col-sm-3">
@@ -299,19 +300,19 @@ if(count($customerdata)){
                 <label for="customerdistrict" class="col-sm-3 control-label">District</label>
                 <div class="col-sm-3">
 
-                    <input type="text" class="form-control" id="customerdistrict" name='customerdistrict'   required="required" value="Madhubani">
+                    <input type="text" class="form-control" id="customerdistrict" name='customerdistrict'   required="required" value="<?php echo $comp_district;?>">
                 </div>
 				<label for="customerstate" class="col-sm-3 control-label">State</label>
                 <div class="col-sm-3">
 
-                    <input type="text" class="form-control" id="customerstate" name='customerstate'   required="required" value="Bihar">
+                    <input type="text" class="form-control" id="customerstate" name='customerstate'   required="required" value="<?php echo $comp_state;?>">
                 </div>
             </div>
 			<div class="form-group form-group-sm">
                 <label for="customerpin" class="col-sm-3 control-label">PIN</label>
                 <div class="col-sm-3">
 
-                    <input type="text" class="form-control" id="customerpin" name='customerpin' maxlength=6 minlength=6  required="required" value="847228">
+                    <input type="text" class="form-control" id="customerpin" name='customerpin' maxlength=6 minlength=6  required="required" value="000000">
                 </div>
 				<label for="customercontact" class="col-sm-3 control-label">Contact</label>
                 <div class="col-sm-3">

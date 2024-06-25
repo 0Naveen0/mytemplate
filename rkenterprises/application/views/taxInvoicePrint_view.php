@@ -6,6 +6,7 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH.'libraries/staticvariables.php');
 
 ?>
 <?php 
@@ -16,9 +17,9 @@ $companyaddressline2=$companydetails[0]['companyaddressline2'];
 $companydistrict=$companydetails[0]['companydistrict'];
 $companystate=$companydetails[0]['companystate'];
 $companyaddress=$companyaddressline1.', '.$companyaddressline2.', '.$companydistrict.',('.$companystate.')';
-$brand="Mayuri";
+$brand="Mayuri/Sunehri";
 $contact2=$companydetails[0]['companycontact'];
-$contact1="8540828517";
+$contact1=$comp_contact2;
 
 $logourl=base_url().'assets/images/company_logo.jpg';
 //$salesofficersignature=base_url().'assets/images/salesofficer1.png';
@@ -39,7 +40,7 @@ $salesofficersignature=base_url().'assets/images/salesofficer21.png';
 //$contact1='9546819714';
 
 }else{
-$salesofficersignature=base_url().'assets/images/salesofficer1.png';
+$salesofficersignature=base_url().'assets/images/salesofficer21.png';
 //$contact='7766909443';	
 }
     

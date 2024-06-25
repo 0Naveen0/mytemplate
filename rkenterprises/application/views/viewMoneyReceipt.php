@@ -5,13 +5,14 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH.'libraries/staticvariables.php');
 $date1="2022-07-01";
 //$currentDate=Date('Y-m-d');
 if( $date >= $date1 ){
 $salesofficersignature=base_url().'assets/images/salesofficer21.png';
 $contact='9431253247';
 }else{
-$salesofficersignature=base_url().'assets/images/salesofficer1.png';
+$salesofficersignature=base_url().'assets/images/salesofficer21.png';
 $contact='7766909443';	
 }
 

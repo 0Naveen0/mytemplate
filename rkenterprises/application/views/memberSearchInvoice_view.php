@@ -5,6 +5,7 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH.'libraries/staticvariables.php');
 
 
  
@@ -80,7 +81,7 @@ if(count($invoicedata)&& $invoicedata[0]['invoiceid']!==""){
  echo '<th>Finance</th><th>Ex-Showroom</th><th>Tax</th><th>Action</th>
  </tr></thead><tbody>';
   foreach($invoicedata as $row){
-	  if($row['companyid']==="1001"){$area="Madhubani";}elseif($row['companyid']==="1002"){$area="Jhanjharpur";}else{$area="Madhubani";}
+	  if($row['companyid']==="1001"){$area=$comp_district;}elseif($row['companyid']==="1002"){$area="Jhanjharpur";}else{$area=$comp_district;}
   echo "<tr><td>" .$row['invoiceid'] . "</td><td>" .$row['invoiceno'] . "</td>";
   echo "<td>" . $row['chasisno'] ."</td>";
   echo "<td>" . $row['invoicedate'] .
@@ -132,7 +133,7 @@ if(count($invoicedata)&& $invoicedata[0]['invoiceid']!==""){
                             <label for="companySelect" class="col-sm-3 control-label">Dealer</label>
                             <div class="col-sm-3">      
                                 <select class="form-control" name="companySelect">
-                                    <option value="1001" selected>Madhubani</option>
+                                    <option value="1001" selected><?php echo $comp_district;?></option>
                                     <!-- <option value="1002" >Jhanjharpur</option> -->                       
                                 </select>
                             </div>

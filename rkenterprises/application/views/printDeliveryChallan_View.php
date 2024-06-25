@@ -8,6 +8,7 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH.'libraries/staticvariables.php');
 
 ?>
 <?php 
@@ -20,7 +21,7 @@ $companystate=$companydetails[0]['companystate'];
 $companyaddress=$companyaddressline1.', '.$companyaddressline2.', '.$companydistrict.',('.$companystate.')';
 $brand="Mayuri";
 $contact2=$companydetails[0]['companycontact'];
-$contact1='8540828517';
+$contact1=$comp_contact2;
 
 $logourl=base_url().'assets/images/company_logo.jpg';
 
@@ -30,10 +31,10 @@ $date1="01-07-2022";
 //$currentDate=Date('Y-m-d');
 if( $date >= $date1 ){
 $salesofficersignature=base_url().'assets/images/salesofficer21.png';
-$contact='8540828517';
+$contact=$contact2;
 }else{
-$salesofficersignature=base_url().'assets/images/salesofficer1.png';
-$contact="8540828517";	
+$salesofficersignature=base_url().'assets/images/salesofficer21.png';
+$contact=$contact2;	
 }
 //$contact = {$contact1}.","{$contact2};
 $contact = $contact1 .','.$contact2;

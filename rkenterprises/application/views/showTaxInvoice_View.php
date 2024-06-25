@@ -6,6 +6,7 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
+require(APPPATH.'libraries/staticvariables.php');
 
 ?>
 <?php 
@@ -111,10 +112,10 @@ if($viewInvoice==='True'){
 //$currentDate=Date('Y-m-d');
 if( $date >= $date1 ){
 $salesofficersignature=base_url().'assets/images/salesofficer21.png';
-$contact1='7011373225';
-$contact2='8540828517';
+$contact1=$comp_contact1;
+$contact2=$comp_contact2;
 }else{
-$salesofficersignature=base_url().'assets/images/salesofficer1.png';
+$salesofficersignature=base_url().'assets/images/salesofficer21.png';
 //$contact='7766909443';	
 }
     

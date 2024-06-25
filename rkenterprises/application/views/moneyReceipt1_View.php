@@ -5,7 +5,8 @@
  * and open the template in the editor.
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
-$salesofficersignature=base_url().'assets/images/salesofficer1.png';
+require(APPPATH.'libraries/staticvariables.php');
+$salesofficersignature=base_url().'assets/images/salesofficer21.png';
 $logourl=base_url().'assets/images/company_logo.jpg';
 
 ?>
